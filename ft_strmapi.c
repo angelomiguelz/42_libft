@@ -6,7 +6,7 @@
 /*   By: mzarichn <mzarichn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 20:25:34 by mzarichn          #+#    #+#             */
-/*   Updated: 2022/11/02 20:37:17 by mzarichn         ###   ########.fr       */
+/*   Updated: 2022/11/02 20:41:14 by mzarichn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = 0;
 	return (str);
 }
+
+
+
+h
