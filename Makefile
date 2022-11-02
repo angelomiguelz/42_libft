@@ -6,7 +6,7 @@
 #    By: mzarichn <mzarichn@student.42lisboa.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/25 13:21:14 by mzarichn          #+#    #+#              #
-#    Updated: 2022/10/29 15:46:04 by mzarichn         ###   ########.fr        #
+#    Updated: 2022/11/02 16:49:52 by mzarichn         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,8 @@ SRC = ft_atoi ft_bzero ft_calloc ft_isalnum ft_isalpha ft_isascii ft_isdigit ft_
 		ft_memcpy ft_memset ft_strlen ft_strlcpy ft_strlcat ft_strncmp ft_tolower ft_toupper \
 		ft_substr ft_strdup ft_strnstr ft_strjoin ft_strchr ft_strtrim ft_strmapi ft_striteri \
 		ft_split ft_putstr_fd ft_putnbr_fd ft_putendl_fd ft_putchar_fd ft_memmove ft_memchr ft_itoa \
-		ft_strtrim
+		ft_strtrim ft_strrchr
+BONUS = ft_lstnew ft_lstadd_front
 
 all: $(NAME)
 

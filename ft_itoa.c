@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mzarichn <mzarichn@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mzarichn <mzarichn@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 10:56:00 by mzarichn          #+#    #+#             */
-/*   Updated: 2022/10/31 12:16:30 by mzarichn         ###   ########.fr       */
+/*   Updated: 2022/11/02 14:51:20 by mzarichn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,12 @@ int	ft_countlen(int n)
 	return (c);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	char	*str;
-	int	len;
+	char		*str;
+	int			len;
 	long int	numb;
-	
+
 	numb = n;
 	len = ft_countlen(numb);
 	str = (char *)malloc(sizeof(char) * (len + 1));

@@ -3,20 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mzarichn <mzarichn@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mzarichn <mzarichn@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/21 10:59:20 by mzarichn          #+#    #+#             */
-/*   Updated: 2022/10/26 16:40:57 by mzarichn         ###   ########.fr       */
+/*   Created: 2022/11/02 18:49:42 by mzarichn          #+#    #+#             */
+/*   Updated: 2022/11/02 18:49:50 by mzarichn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-*	DESCRIPTION
-*	Outputs the integer ’n’ to the given file descriptor.
-*	PARAMETERS
-*	#1. The integer to output.
-*	#2. The file descriptor on which to write.
-*	RETURN VALUES
-*	-
-*/
+#include "libft.h"
 
+void	ft_putnbr_fd(int n, int fd)
+{
+	unsigned int	nbr;
+
+	if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		nbr = (unsigned int)(n * -1);
+	}
+	else
+		nbr = (unsigned int)n;
+	if (nbr >= 10)
+		ft_putnbr_fd(nbr / 10, fd);
+	ft_putchar_fd((char)(nbr % 10 + 48), fd);
+}
