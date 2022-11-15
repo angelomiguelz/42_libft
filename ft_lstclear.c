@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mzarichn <mzarichn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/13 15:13:33 by mzarichn          #+#    #+#             */
-/*   Updated: 2022/11/11 16:36:41 by mzarichn         ###   ########.fr       */
+/*   Created: 2022/11/10 15:04:11 by mzarichn          #+#    #+#             */
+/*   Updated: 2022/11/10 15:26:42 by mzarichn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	if (c >= 'a' && c <= 'z')
-		c -= 32;
-	return (c);
+	t_list	*slst;
+
+	if (!lst)
+		return ;
+	while (*lst)
+	{
+		slst = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = slst;
+	}
+	*lst = 0;
 }

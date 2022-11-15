@@ -6,19 +6,9 @@
 /*   By: mzarichn <mzarichn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 10:17:29 by mzarichn          #+#    #+#             */
-/*   Updated: 2022/11/09 14:46:28 by mzarichn         ###   ########.fr       */
+/*   Updated: 2022/11/10 14:00:09 by mzarichn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-*	LIBRARY
-*	#include <stdlib.h>
-*	DESCRIPTION
-*	The atoi() function converts the initial portion of the string pointed to by 
-*	str to int representation.
-*	RETURN VALUES
-*	The atoi() function returns its converted int representation.
-*/
 
 #include "libft.h"
 
